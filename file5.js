@@ -2,7 +2,6 @@
 // a = 23 //will throw error because
 // value of const cannot be changed
 
-
 let x = 5
 let y = 5
 
