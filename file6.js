@@ -6,7 +6,6 @@ let x = 9;
 //     console.log("Odd Number")
 // }
 
-
 if (x % 2 == 0) 
     console.log("Even Number");
 else 
