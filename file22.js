@@ -1,4 +1,4 @@
-//Promise using .then
+//Promises using async await
 const verify = (age) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -17,8 +17,13 @@ const admit = (flag) => {
   }
 };
 
-// verify(23).then((a)=>admit(a)).catch((err)=>console.log(err))
+const main = async () => {
+  try {
+    const result = await verify(20);
+    admit(result);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-verify(5).then((a)=>admit(a)).catch((err)=>console.log(err))
-
-
+main();
